@@ -1,22 +1,15 @@
 <?php
 session_start();
-if ($_GET['add_to_cart']>0)
-{
-    if ($_GET['add_to_cart'] == 46)
-    {
-        $_SESSION['nuts']++;
-    }
-    elseif ($_GET['add_to_cart'] == 36)
-    {
-        $_SESSION['chips']++;
-    }
-    elseif ($_GET['add_to_cart'] == 58)
-    {
-        $_SESSION['chocolate']++;
-    }
-    elseif ($_GET['add_to_cart'] == 32)
-    {
-        $_SESSION['mm']++;
+
+if ($_GET["add_to_cart"] != NULL){
+    if($_GET['add_to_cart'] == 46){
+        $_SESSION ['nuts'] ++;
+    }elseif ($_GET['add_to_cart'] == 36){
+        $_SESSION ['chips'] ++;
+    } elseif ($_GET['add_to_cart'] == 58){
+        $_SESSION ['choco'] ++;
+    } elseif ($_GET['add_to_cart'] == 32){
+        $_SESSION ['mm'] ++;
     }
 }
 
